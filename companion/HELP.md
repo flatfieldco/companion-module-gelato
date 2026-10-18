@@ -1,6 +1,6 @@
 ## Gelato
 
-Controls [Gelato](https://github.com/alfo/Gelato) from a Stream Deck or any Companion surface: type a gel code from keys, confirm or cancel what is pending, lock the show, see which palettes were edited on the console, build new types, and step through preview options.
+Controls [Gelato](https://gelato.ing) from a Stream Deck or any Companion surface: type a gel code from keys, confirm or cancel what is pending, lock the show, see which palettes were edited on the console, build new types, and step through preview options.
 
 ### Setting up
 
