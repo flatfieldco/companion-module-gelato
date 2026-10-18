@@ -7,11 +7,11 @@
 	"description": "Control Gelato, the Mac app that puts gel colours onto Eos consoles, over its Remote Control OSC server",
 	"version": "0.2.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/alfo/companion-module-gelato.git",
-	"bugs": "https://github.com/alfo/companion-module-gelato/issues",
+	"repository": "git+https://github.com/flatfieldco/companion-module-gelato.git",
+	"bugs": "https://github.com/flatfieldco/companion-module-gelato/issues",
 	"maintainers": [
 		{
-			"name": "Alex Forey",
+			"name": "Flat Field",
 			"email": "support@flatfield.co"
 		}
 	],
