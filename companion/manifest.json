@@ -1,8 +1,8 @@
 {
 	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
-	"id": "gelato",
-	"name": "gelato",
+	"id": "flatfield-gelato",
+	"name": "flatfield-gelato",
 	"shortname": "Gelato",
 	"description": "Control Gelato, the Mac app that puts gel colours onto Eos consoles, over its Remote Control OSC server",
 	"version": "0.0.0",
@@ -21,7 +21,7 @@
 		"apiVersion": "0.0.0",
 		"entrypoint": "../dist/main.js"
 	},
-	"legacyIds": [],
+	"legacyIds": ["gelato"],
 	"manufacturer": "Flat Field",
 	"products": ["Gelato"],
 	"keywords": ["lighting", "eos", "etc", "gel", "color", "colour", "palette", "osc"]
