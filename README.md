@@ -2,11 +2,17 @@
 
 A [Bitfocus Companion](https://bitfocus.io/companion) module for [Gelato](https://gelato.ing), the Mac app that puts gel colours onto Eos consoles. It talks to Gelato's Remote Control OSC server, so a Stream Deck can type gel codes, confirm or cancel what is pending, lock the show, and show what Gelato is doing.
 
-This module is private and not in Companion's module list. Install it as a developer module.
+## Install from Companion's module list
+
+You need Companion 5.x (module API 2).
+
+1. In Companion, open **Connections** and add a connection.
+2. Search for **Gelato** (listed under Flat Field) and choose it. Companion downloads the module the first time.
+3. Set it up as below, under _Set up Gelato's Remote Control pane_.
 
 ## Install as a developer module
 
-You need Companion 5.x (module API 2) and Node 22 with Corepack, which ships with Node.
+To run a build of your own, such as a change you are testing, load the module from a folder instead. You need Companion 5.x (module API 2) and Node 22 with Corepack, which ships with Node.
 
 1. Pick a folder for developer modules, such as `~/companion-modules`, and clone this repo into it:
 
@@ -125,6 +131,10 @@ Tests never talk to Gelato or a console. `src/__tests__/fake-gelato.ts` is a fak
 
 The OSC and SLIP codec is in `src/osc.ts`, so the module has no dependency beyond Companion's own template.
 
+## Support
+
+Questions and bug reports: [GitHub issues](https://github.com/flatfieldco/companion-module-gelato/issues) or support@flatfield.co.
+
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).

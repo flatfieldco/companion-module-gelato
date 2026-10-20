@@ -22,3 +22,7 @@ Gels (the keypad, Confirm and Cancel), Show (lock, console, readback, edited pal
 ### Confirmation and the lock
 
 Gelato asks for a confirm before a remote command writes, unless **Remote commands skip confirmation** is on in its Settings. While the show-mode lock is on, only `Lock off` and `Ping` are accepted.
+
+### Support
+
+Questions and bug reports: support@flatfield.co, or the module's [GitHub issues](https://github.com/flatfieldco/companion-module-gelato/issues).
