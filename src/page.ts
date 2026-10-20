@@ -172,7 +172,7 @@ export function buildPage(): PageExport {
 		instances: {
 			[CONNECTION_ID]: {
 				moduleInstanceType: 'connection',
-				moduleId: 'gelato',
+				moduleId: 'flatfield-gelato',
 				moduleVersionId: 'dev',
 				updatePolicy: 'stable',
 				sortOrder: 0,

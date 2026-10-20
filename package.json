@@ -1,6 +1,6 @@
 {
-	"name": "companion-module-gelato",
-	"version": "0.2.0",
+	"name": "flatfield-gelato",
+	"version": "1.0.0",
 	"main": "dist/main.js",
 	"type": "module",
 	"scripts": {
