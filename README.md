@@ -2,17 +2,9 @@
 
 A [Bitfocus Companion](https://bitfocus.io/companion) module for [Gelato](https://gelato.ing), the Mac app that puts gel colours onto Eos consoles. It talks to Gelato's Remote Control OSC server, so a Stream Deck can type gel codes, confirm or cancel what is pending, lock the show, and show what Gelato is doing.
 
-## Install from Companion's module list
-
-You need Companion 5.x (module API 2).
-
-1. In Companion, open **Connections** and add a connection.
-2. Search for **Gelato** (listed under Flat Field) and choose it. Companion downloads the module the first time.
-3. Set it up as below, under _Set up Gelato's Remote Control pane_.
-
 ## Install as a developer module
 
-To run a build of your own, such as a change you are testing, load the module from a folder instead. You need Companion 5.x (module API 2) and Node 22 with Corepack, which ships with Node.
+Until the module is on Companion's module list, this is how you install it. You can also use it to run a build of your own, such as a change you are testing. You need Companion 5.x (module API 2) and Node 22 with Corepack, which ships with Node.
 
 1. Pick a folder for developer modules, such as `~/companion-modules`, and clone this repo into it:
 
@@ -33,6 +25,14 @@ To run a build of your own, such as a change you are testing, load the module fr
 4. In Companion, open **Connections**, add a connection, and choose **Gelato**.
 
 After a change, run `yarn build` again and restart the connection. `yarn dev` rebuilds on every save.
+
+## Install from Companion's module list (after launch)
+
+The module is **not on the list yet**, so use the developer module steps above for now. When it is listed, you will not need Node or a build:
+
+1. In Companion, open **Connections** and add a connection.
+2. Search for **Gelato** (listed under Flat Field) and choose it. Companion downloads the module the first time.
+3. Set it up as below, under _Set up Gelato's Remote Control pane_.
 
 ## Set up Gelato's Remote Control pane
 
