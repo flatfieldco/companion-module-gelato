@@ -87,6 +87,16 @@ describe('feedback into variables', () => {
 		)
 	})
 
+	it('passes the Auto Palettes refusal code through, old and new', () => {
+		for (const code of ['no-auto-palettes', 'no-show-kit']) {
+			const values = parseFeedback(
+				message('/gelato/out/last', 'refused', 'Refused', code, 'Auto Palettes', '', '', '', ''),
+			)
+			assert.equal(values?.last_reason, code)
+			assert.equal(values?.last_reason_text, 'Auto Palettes')
+		}
+	})
+
 	it('reads the flags as numbers', () => {
 		assert.deepEqual(parseFeedback(message('/gelato/out/eos/connected', 1)), { eos_connected: 1 })
 		assert.deepEqual(parseFeedback(message('/gelato/out/lock', 0)), { locked: 0 })

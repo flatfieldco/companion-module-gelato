@@ -74,6 +74,8 @@ While Gelato's show-mode lock is on, it accepts only **Lock off** and **Ping**. 
 
 **Variables**: every value Gelato reports, including each slot of the edited-palettes and new-types lists (eight each; slots past the count are empty). Examples: `entry`, `status_text`, `pending_gel`, `pending_kind_text`, `last_result_text`, `locked`, `eos_connected`, `edited_count`, `edited_1_palette`, `edited_1_how_text`, `build_new_count`, `preview_state_text`, `preview_reason_text`. `edited_shown`, `edited_shown_palette`, `edited_shown_label`, `edited_shown_how_text` and `edited_shown_user` hold the edited palette a knob has scrolled to (shown as CP201 - L201 in `edited_shown_label`). The full list is on the connection's **Variables** page.
 
+`last_reason` holds Gelato's reason code as sent. The module doesn't interpret it, so a button that shows or compares it sees what Gelato sends. A command refused because this Mac has no Gelato Pro licence for Auto Palettes sends `no-auto-palettes` (display text "Auto Palettes"); builds before this release sent `no-show-kit` for the same refusal. A button that compares the code should accept both for one release.
+
 **Presets**: _Gels_ (gel keypad `L R SG CG G A 0–9 .` with Clear and Enter; Confirm and Cancel showing what is pending; status, progress and last result), _Show_ (Lock, console, readback, edited palettes 1–8, Build new, Re-run build), _Preview_ (state and reason, previous, next, choose, release), and _Stream Deck + XL_ (the displays and knobs below). The keypad presets come in groups of a numpad row (7 8 9, 4 5 6, 1 2 3, 0 .), so the preset panel lays them out as a numpad. Button text is display words and variables, never sentences.
 
 Palette numbers are strings, so `0.10` survives. Nothing is `""` or `0`.
